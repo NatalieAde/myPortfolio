@@ -2,7 +2,7 @@ import React from "react"
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography'
-import ANDphoto from './me.jpg';
+import ANDphoto from '../assets/me.jpg';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 

@@ -10,13 +10,8 @@ import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
 
 const useStyles = makeStyles({
-    root: {
-      maxWidth: 345,
-    },
-    root2:{
-    flexGrow: 1,
-    marginBottom: `1.45rem`,
-    background: `#FFDC00`,
+  root: {
+    maxWidth: 345,
   },
   paper: {
     position: 'absolute',
@@ -36,9 +31,9 @@ const useStyles = makeStyles({
     const left = 50 + rand();
   
     return {
-      top: `${top}%`,
-      left: `${left}%`,
-      transform: `translate(-${top}%, -${left}%)`,
+      top: `50%`,
+      left: `20%`,
+      transform: `translate(-50%, -20%)`,
     };
   }
 
@@ -61,7 +56,7 @@ function PortfolioCard ({title, subTitle, image, about}){
         <div style={modalStyle} className={classes.paper}>
           <h2 id="simple-modal-title">Text in a modal</h2>
           <p id="simple-modal-description">
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            UPDATE
           </p>
         </div>
       );
@@ -73,7 +68,7 @@ function PortfolioCard ({title, subTitle, image, about}){
                 <CardMedia
                     component="img"
                     alt="Contemplative Reptile"
-                    height="120"
+                    height="220"
                     image={image}
                     title="Contemplative Reptile"
                 />

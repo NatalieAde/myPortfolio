@@ -4,14 +4,14 @@ import { Link } from "gatsby"
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Styles from './header2Style';
+import Styles from './navbarStyle';
 
 
-function Header({ p1, p2, p3, p4, pageTitle1, pageTitle2, pageTitle3, pageTitle4 }) {    
+function Header({ p1, p2, p3, p4, p5, pageTitle1, pageTitle2, pageTitle3, pageTitle4, pageTitle5 }) {    
 
       return (
           <div style={Styles.root} >
-            <AppBar color={"secondary"} style={{flexDirection: "row", justifyContent: "flex-end"}}>
+            <AppBar color={"secondary"} style={{flexDirection: "row"}}>
               <Toolbar>
                 <Typography variant="h6" > 
                 <Link
@@ -44,6 +44,14 @@ function Header({ p1, p2, p3, p4, pageTitle1, pageTitle2, pageTitle3, pageTitle4
                   style={Styles.title}
                 >
                   {p4}
+                </Link>      
+              </Typography>
+              <Typography variant="h6" > 
+                <Link
+                  to={pageTitle5}
+                  style={Styles.title}
+                >
+                  {p5}
                 </Link>      
               </Typography>
               </Toolbar>

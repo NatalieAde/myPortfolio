@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header2"
+import Navbar from "./navbar"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,15 +25,17 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header 
+      <Navbar
         p1={"About"} 
         p2={"Portfolio"} 
         p3={"Blog"} 
-        p4={"Contact"}
+        p4={"Experience"}
+        p5={"Contact"}
         pageTitle1={"/about/"}
         pageTitle2={"/portfolio/"}
         pageTitle3={"/blog/"}
-        pageTitle4={"/blog/"}/>
+        pageTitle4={"/experience/"}
+        pageTitle5={"/contact/"}/>
       <div
         style={{
           margin: `0 auto`,
